@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+    <script src="js/main.js"></script> 
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            height: 200px;
+            text-align: center;
+        }
+        button{
+          font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>The concat() method joins two or more strings.</p>
+        <p id="concate_str"></p>
+        <button onclick="my_Function()">Click me!</button>
+    </div>
+    <div>
+        <p>The slice() method selects from a given start, up to a (not inclusive) given end.</p>
+        <p id="slice"></p>
+        <button onclick="slice_Method()">Click me!</button>
+    </div>
+     
+    <p>The toUpperCase() method converts a string to uppercase letters.</p>
+    <p id="uppercase">hello world!</p>
+    <button onclick="uppercase_Function()">Convert to uppercase</button>
+    
+   
+    <p>The search() method returns the index (position) of the first match.</p>
+    <p id="searchResult"></p>
+    <p id="demo"></p>
+    
+    
+    <p>The toString() method can be used to convert a string object into a string.</p>
+    <p id="Number_to_string"></p>
+    <button onclick="string_Method()">Click me!</button>
+    
+    
+    <p>The toPrecision() method formats a number to a specified length.</p>
+    <p id="precision"></p>
+    <button onclick="precision_Method()">Click me!</button>
+     
+    
+    <p>toFixed() converts a number to a string, rounded to a specified number of decimals:</p>
+    <p id="demo2">5.56789</p>
+    <button onclick="fixed_Function()">Click me!</button>
+     
+    <p>The valueof() returns the primitive value of an integer</p>
+    <p id="demo3"></p>
+    <button onclick="value_Function()">Click me!</button>
+    
+</body>
+</html>
+
