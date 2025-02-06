@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Pizzadude&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+
+
+
+body {
+    margin: 0;
+    padding: 70px 0 0; /* Padding for fixed navbar */
+    background: linear-gradient(45deg, #FF4500, #FF6347, #FFA500); 
+    font-family: 'Pizzadude', cursive;
+    line-height: 1.6;
+    background-image: url(/img/1738807669793.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h1 {
+    font-family: 'Chewy', cursive;
+    letter-spacing: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 
+        3px 3px 0 #cf2a24,
+        6px 6px 0 #ffcc00, 
+        9px 9px 5px rgba(0, 0, 0, 0.2), 
+        12px 12px 8px rgba(0, 0, 0, 0.4), 
+        0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+h3 {
+    font-family: "Open Sans", serif;
+    color: #333333;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+#menuBG {
+    max-width: 850px;
+    margin: 2rem auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: #f39c12 5px solid;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background-image: url(/img/pizza.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 500px; /* Adjust as needed */
+}
+
+#frmMenu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+
+}
+
+.left, .center, .right, .menu4 {
+    font-size: 15px;
+    flex: 1;
+    min-width: 100px;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.8);
+    
+    border-style: dashed;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu4{
+    border: solid #d9534f 5px;
+    border-style: dashed;
+}
+
+.right{
+    border: solid #ffcc00 5px;
+    border-style: dashed;
+}
+
+.center{
+    border: solid #27aa27 5px;
+    border-style: dashed;
+
+}
+
+
+.size {
+    margin-bottom: 12px;
+}
+
+#btnOrder {
+    background-color: rgb(39, 170, 39);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    text-align: center;
+    position: static;
+}
+
+#btnOrder:hover {
+    background-color: rgb(30, 140, 30);
+    transform: scale(1.05);
+}
+
+#cart {
+    
+    margin: 2rem auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
+}
+
+#showText {
+    padding-left: 1px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    font-size: 1.1rem;
+    text-align: center;
+    color: #333333;
+    max-width: 100%;
+    text-align: left;
+
+}
+
+#totalPrice {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #27aa27;
+    background: rgba(0, 0, 0, 0.383);
+    
+}
+
+ul {
+    font-family: 'Lobster', cursive;
+    list-style-type: none;
+    margin: 0;
+    padding: 12px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #ffffff00;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border-radius: 6px;
+    background-color: #d9534f;
+}
+
+li a:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+#logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #e74c3c, #f39c12);
+    transition: background 0.3s ease, transform 0.5s ease;
+    transform: rotate(3deg);
+    cursor: pointer;
+
+}
+
