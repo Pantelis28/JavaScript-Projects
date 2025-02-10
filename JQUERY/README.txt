@@ -1,0 +1,2 @@
+jQuery Cursor Pointer and Hover Effects
+A simple web application that demonstrates how to dynamically add a cursor pointer and hover effects to elements using jQuery. When the user hovers over specific elements (like <h1> and <p>), the cursor changes to a pointer, and optional hover effects are applied.

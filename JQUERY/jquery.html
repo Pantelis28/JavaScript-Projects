@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="jquery.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+       
+        <script>
+            $(document).ready(function () {
+            // Append the content to the body
+            $("body").append(`
+                <div id='container'>
+                    <div id='inner'>
+                        <h1>Basic jQuery</h1>
+                        <p id='p1'>Paragraph 1 (Click Here)</p>
+                        <p id='p2'>Paragraph 2 (Click Here)</p>
+                        <p id='p3'>Paragraph 3 (Click Here)</p>
+                    </div>
+                </div>
+            `);
+
+            $("h1, p").css("cursor", "pointer");
+
+            // Click handler for h1
+            $("h1").click(function () {
+                $("p").fadeOut(1500); 
+                $("p").fadeIn( 750 ); 
+            });
+
+            // Style paragraph
+            $("#p2").css({ "color": "red" });
+            $("#p1").css({"color":"green"});
+            $("#p3").css({"font-weight":"700"});
+
+
+            // Click handler for the third paragraph
+            $("#p3").click(function () {
+                $("h1").hide(500); 
+                $("h1").show(500); 
+            });
+
+            // Click handler for the first paragraph
+            $("#p1").click(function () {
+                $("#p2").hide(500); 
+                $("#p2").show(); 
+            });
+
+            // Click handler for the second paragraph
+            $("#p2").click(function () {
+                $(this).hide(500); 
+            });
+
+            // Event delegation for all paragraphs
+            $(document).on("click", "p", function () {
+                console.log("You clicked a paragraph");
+            });
+        });
+      
+
+
+
+        </script>
+    </body>
+</html>
