@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+       html, body {
+                margin: 0;
+                padding: 0;
+                color: white;
+                font-size: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center; 
+                justify-content: flex-start; 
+                min-height: 100vh; 
+                background-color: black;
+            }
+
+            button {
+                margin-top: 10px;
+                width: 100%;
+                padding: 20px;
+                font-size: 20px;
+                box-shadow: 2px 3px  rgba(255, 0, 0, 0.8);
+                margin-bottom: 20px;
+                border-radius: 20px 0px;
+                font-size: 1.5rem;
+            }
+
+            button:hover {
+                background-color: white;
+                cursor: pointer;
+            }
+
+            #feed {
+                display: flex;
+                flex-direction: column;
+                align-items: center; 
+                gap: 30px; 
+                width: 100%; 
+                max-width: 100px; 
+            }
+
+            #feed img {
+                 padding: 20px 20px;
+                 width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+
+      
+        <button onclick="showCountries()">Show Countries</button>
+        <div id="feed"></div>
+    <script>
+        function showCountries() {
+    // Create a new XMLHttpRequest object to interact with the API
+    let xhr = new XMLHttpRequest(); 
+    
+    // Initialize a GET request to fetch data from the REST Countries API
+    xhr.open('GET', 'https://restcountries.com/v3.1/all', true);
+    
+    // Define what happens when the request is successfully completed
+    xhr.onload = function() {
+        // Check if the HTTP status code is 200 (OK)
+        if (xhr.status == 200) {
+            console.log('success'); // Log success message to the console
+            
+            // Parse the JSON response into a JavaScript array
+            let countries = JSON.parse(this.response);
+            console.log(countries); // Log the retrieved country data
+            
+            // Iterate over each country in the fetched data
+            countries.forEach(country => {
+                // Create a div element to act as a country card
+                const countryCard = document.createElement('div');
+                
+                // Create an image element to display the country’s flag
+                const countryCardImage = document.createElement('img');
+                
+                // Set the inner HTML of the countryCard to the country's common name
+                countryCard.innerHTML = country.name.common; 
+                
+                // Set the source of the image to the country's flag
+                countryCardImage.src = country.flags.png; // Note: The flag property is now 'flags.png'
+                
+                // Append the image to the countryCard div
+                countryCard.appendChild(countryCardImage);
+                
+                // Append the countryCard to an existing element with ID 'feed' in the DOM
+                document.getElementById('feed').appendChild(countryCard);
+            });
+        }
+    };
+    
+    // Send the request to fetch the data
+    xhr.send();
+}
+
+        
+
+    </script>
+    
+    </body>
+</html>

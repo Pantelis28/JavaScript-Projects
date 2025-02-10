@@ -1,0 +1,2 @@
+Countries Flags Display
+A simple web application that fetches and displays country flags from the REST Countries API. When the user clicks a button, the application retrieves data about all countries and displays their flags in a symmetrical, vertical column.
