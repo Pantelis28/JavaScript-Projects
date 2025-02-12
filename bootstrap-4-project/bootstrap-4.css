@@ -1,0 +1,82 @@
+h1 {
+    font-family: "Lora", serif;
+    color: white;
+    font-style: normal;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+  }
+  
+  
+  .card-img-top {
+    height: 300px;
+    object-fit:fill;
+  }
+  
+  .card {
+    margin-bottom: 15px;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  .badge {
+    font-size: 0.8rem;
+    margin: 2px;
+  }
+  
+  .jumbotron {
+    position: relative;
+    background-image: url(https://wallpapers.com/images/hd/poster-background-hlybuowt1whxbh2z.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    
+  }
+  
+  .jumbotron::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    
+  }
+  
+  .jumbotron .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .display-1 {
+    text-shadow: 4px 1px 4px rgba(0, 0, 0, 5);
+    font-family: roboto;
+    font-weight: 900;
+    color: white;
+  }
+  
+  .lead{
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 5);
+    font-weight: 350;
+    color: white;
+  }
+  
+  .btn-outline-primary{
+    border-radius: 10px 0px;
+    color: white;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 5);
+    
+  }
