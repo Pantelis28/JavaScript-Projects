@@ -1,2 +1,2 @@
-# JavaScript-Projects
-Welcome to my repository of JavaScript projects! Here, you will find a wide range of projects that highlight my skills in JS programming
+Car Rental Website
+A modern and responsive car rental one-page website with an image carousel, pop-up login form, smooth scrolling, and animations for an enhanced user experience.

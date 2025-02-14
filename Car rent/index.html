@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Car Rent Website</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    </head>
+    <body>
+                 
+        <header class="minimalistic-banner">
+            <div class="banner-content">
+                <div class="banner-left">
+                    <i class="ri-phone-line"></i>
+                    <a href="tel:+1234567890">Call Us: +123 456 7890</a>
+                </div>
+                <div class="banner-center">
+                    <span>Welcome to Our Car Service</span>
+                </div>
+                <div class="banner-right">
+                    <span>Open Hours: Mon - Sat: 9:00am - 6:00pm</span>
+                </div>
+            </div>
+        </header>
+        <header class="header">
+            <nav class="nav container">
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+                <div class="navbar">
+                    <a href="#home" class="nav-link">HOME</a>
+                    <a href="#cars" class="nav-link">CARS</a>
+                    <a href="#work" class="nav-link">SERVICES</a>
+                    <a href="#Reviews" class="nav-link">REVIEWS</a>
+                </div>
+                <button class="sign-up" onclick="openForm()">Login</button>
+                <!-- Popup-->
+                <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                      <h1>Login</h1>
+                  
+                      <label for="email"><p>Email</p></label>
+                      <input type="text" placeholder="Enter Email" name="email" required>
+                  
+                      <label for="psw"><p>Password</p></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                      <button type="submit" class="btn">Login</button>
+                      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                  </div>
+                
+                  <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+        
+        <!--Home-->
+        <section class="home" id="home">
+            <h1 class="home-title">Audi AG</h1>
+            <div class="home-content container">
+                <div class="home-data">
+                    <div class="home-box">
+                        <h3>Series</h3>
+                        <h2>Rs 7</h2>
+                    </div>
+                </div>
+                <div class="home-data">
+                    <div class="home-box">
+                        <h3>Torque</h3>
+                        <h2>590 lb-ft</h2>
+                    </div>
+                </div>
+                <div class="home-data">
+                    <div class="home-box">
+                        <h3>Horsepower</h3>
+                        <h2>621 Hp / x78 Kw</h2>
+                    </div>
+                </div>
+            <img src="/images/Audi-rs7.jpg" alt="" class="home-img">
+        </div>
+            <div class="home-btn">
+                <a href="#" class="dealer-btn"><i class="ri-compass-3-line">Find a dealer</i></a>
+                <a href="#" class="drive-btn"><i class="ri-roadster-fill">Test Drive</i></a>
+            </div>
+        </section>
+        <!--Cars-->
+        <section class="cars container" id="cars">
+        <!--Heading-->
+        <div class="heading">
+            <span>LAST MINUTE OFFERS</span>
+            <h2>Cars for rent</h2>
+        </div>
+        <!--Cars Content-->
+        <div class="cars-content"></div>
+        </section>
+        <!--Work-->
+        <section class="work" id="work">
+        <!--Heading-->
+    <div class="heading container">
+        <span>ONE-OF-A-KIND CAR RENTALS</span>
+        <h2>Search, Compare, Reserve</h2>
+    </div>>
+    <div class="work-container container">
+        <!--box 1--> 
+        <div class="work-box">
+            <i class="ri-medal-line"></i>
+            <h3 class="work-title">Find the right car</h3>
+            <p class="work-description">
+                Enter a location and date to browse and compare
+                thousands of cars available to rent in over 600 cities.
+            </p>
+        </div>
+        <!--box 2-->
+        <div class="work-box">
+            <i class="ri-bank-card-line"></i>
+            <h3 class="work-title">Book at the best price! </h3>
+            <p class="work-description">
+                Our prices are guaranteed equal or lower than you can book 
+                on arrival! Cancel for free up to 24 hours before.
+            </p>
+        </div>
+        <!--box 3-->
+        <div class="work-box">
+            <i class="ri-roadster-fill"></i>
+            <h3 class="work-title">Enjoy the drive</h3>
+            <p class="work-description">
+                Have the car deliever or pick it up from the local rental office. 
+                Show voucher, grab the keys and hit the road.
+            </p>
+        </div>
+    </div>
+        </section>
+        <!--Destination-->
+        <section class="destination" id="destinations">
+        <!--Heading-->
+        <div class="heading container">
+            <span>Top CITIES In Europe</span>
+            <h2>Top Rental Destinations</h2>
+        </div>
+        <!-- Swiper -->
+  <<div class="destination-container container swiper">
+    <div class="swiper-wrapper">
+        <!--Slider City 1-->
+        <div class="swiper-slide">
+            <div class="city-box">
+                <img src="https://mediaim.expedia.com/localexpert/48163924/775442fe-e1e7-486a-9e55-fe55bf598a96.jpg" alt="" class="city-img">
+                <div class="box-text">
+                    <h2 class="ct-title">Greece</h2>
+                    <span class="city-name">Athens</span>
+                </div>
+            </div>
+        </div>
+        <!--Slider City 2-->
+        <div class="swiper-slide">
+            <div class="city-box">
+                <img src="https://img.freepik.com/premium-photo/trogir-is-historic-town-harbour-adriatic-coast-croatia_70898-4012.jpg" alt="" class="city-img">
+                <div class="box-text">
+                    <h2 class="ct-title">Croatia</h2>
+                    <span class="city-name">Zadar</span>
+                </div>
+            </div>
+        </div>
+         <!--Slider City 3-->
+        <div class="swiper-slide">
+            <div class="city-box">
+                <img src="https://www.choicehotels.com/content/choicehotels/americas/us/en/norway/_jcr_content/root/main-par/grid_container_11390/grid/image.coreimg.jpeg/1732734131628/country-norway-body-explore.jpeg" alt="" class="city-img">
+                <div class="box-text">
+                    <h2 class="ct-title">Norway</h2>
+                    <span class="city-name">Bergen</span>
+                </div>
+            </div>
+        </div>
+        <!--Slider City 4-->
+        <div class="swiper-slide">
+            <div class="city-box">
+                <img src="https://i.insider.com/65eb533ace7f1785b2e7f267?width=1200&format=jpeg" alt="" class="city-img">
+                <div class="box-text">
+                    <h2 class="ct-title">Netherlands</h2>
+                    <span class="city-name">Amsterdam</span>
+                </div>
+            </div>
+        </div>
+        <!--Slider City 5-->
+        <div class="swiper-slide">
+            <div class="city-box">
+                <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSX0_KQt8A1EeENHrQSR6XI592l0P4ICihYURsHtlV261GQuU7T9tCSBiNB1PomeIfbOzApcuqng8TUqvQT-6wBFpaisGdmOKK6rjGpdA" class="city-img">
+                <div class="box-text">
+                    <h2 class="ct-title">Portugal</h2>
+                    <span class="city-name">Lisbon</span>
+                </div>
+            </div>
+        </div>
+        <!--Slider City 6-->
+        <div class="swiper-slide">
+            <div class="city-box">
+                <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcR8kZGC43jmg8V-GepC5JnpMbiMVhFQ7WLXFdXwuFIp5ruikzKEmkcGT9RxeMpuSrJZXRRKeOS64EYCRgDlbqZ1CynVejWEJivnwOlmkw" alt="" class="city-img">
+                <div class="box-text">
+                    <h2 class="ct-title">Italy</h2>
+                    <span class="city-name">Rome</span>
+                </div>
+            </div>
+        </div>
+        <!--Slider City 7-->
+        <div class="swiper-slide">
+            <div class="city-box">
+                <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_2560,h_1705/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/tvuomhxfjdmumuae5je6/EiffelTowerTourByElevator-Klook.jpg" alt="" class="city-img">
+                <div class="box-text">
+                    <h2 class="ct-title">France</h2>
+                    <span class="city-name">Paris</span>
+                </div>
+            </div>
+        </div>
+        <!--Slider City 8-->
+        <div class="swiper-slide">
+            <div class="city-box">
+                <img src="https://www.infobae.com/resizer/v2/JE6RP2H2PBHAHAX4OM6R3QBACU.jpg?auth=b20b48ab28516c1b9bbbb66ef0261783d0bac0b2defcc81236c1a3f6189c90a7&smart=true&width=1200&height=900&quality=85"  class="city-img">
+                <div class="box-text">
+                    <h2 class="ct-title">Spain</h2>
+                    <span class="city-name">Madrid</span>
+                </div>
+            </div>
+        </div>
+        <!--Slider City 9-->
+        <div class="swiper-slide">
+            <div class="city-box">
+                <img src="https://media.istockphoto.com/id/800507892/photo/astronomical-clock-and-church-of-our-lady-before-tyn-in-prague.jpg?s=612x612&w=0&k=20&c=iG-UNdqPDbeiEZbatHsrYJX12_ma8u92bfKdkGDDERw=" alt="" class="city-img">
+                <div class="box-text">
+                    <h2 class="ct-title">Czechia</h2>
+                    <span class="city-name">Prague</span>
+                </div>
+            </div>
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+    <!-- Add Pagination if needed -->
+    <div class="swiper-pagination"></div>
+  
+</div>
+    </section>
+    <!--Reviews-->
+    <section class="reviews" id="Reviews">
+    <!---Heading-->    
+        <div class="heading container">
+            <span>TESTIMONIALS</span>
+            <h2>Hear it from them</h2>
+        </div>
+        <div class="review-container container">
+    <!--Box 1-->
+    <div class="rev-box">
+        <div class="stars">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-half-fill"></i>
+        </div>
+        <p>-Great customer service, I'll be using them again next time.</p>
+       <div class="profile">
+        <img src="https://openclipart.org/download/247319/abstract-user-flat-3.svg" alt="">
+        <div class="profile-text">
+            <h3 class="name">Pablo P.</h3>
+            <span>4 April 2024</span>
+        </div>
+       </div>    
+    </div>
+    <!--Box 2-->
+    <div class="rev-box">
+        <div class="stars">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-half-fill"></i>
+        </div>
+        <p>-Great customer service, I'll be using them again next time.</p>
+       <div class="profile">
+        <img src="https://openclipart.org/download/247319/abstract-user-flat-3.svg" alt="">
+        <div class="profile-text">
+            <h3 class="name">Julia P.</h3>
+            <span>4 April 2024</span>
+        </div>
+       </div>    
+    </div>
+    <!--Box 3-->
+    <div class="rev-box">
+        <div class="stars">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-half-fill"></i>
+        </div>
+        <p>-Great customer service, I'll be using them again next time.</p>
+       <div class="profile">
+        <img src="https://openclipart.org/download/247319/abstract-user-flat-3.svg" alt="">
+        <div class="profile-text">
+            <h3 class="name">Jackie P.</h3>
+            <span>4 April 2024</span>
+        </div>
+       </div>    
+    </div>
+    
+    </section>
+    <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-columns">
+            <!-- Column 1: Contact Info -->
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p><i class="ri-map-pin-line"></i> 1234 Street Name, City, State, 12345</p>
+                <p><i class="ri-phone-line"></i> (123) 456-7890</p>
+                <p><i class="ri-mail-line"></i> info@carrent.com</p>
+            </div>
+            <!-- Column 2: Quick Links -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#cars">Cars</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#Reviews">Reviews</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
+            </div>
+            <!-- Column 3: Social Media -->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                    <a href="#"><i class="ri-linkedin-fill"></i></a>
+                </div>
+            </div>
+            <!-- Column 4: Newsletter -->
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for the latest updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Car Rent. All rights reserved.</p>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    
+    
+    <script src="index.js"></script>
+    </body>
+</html>
