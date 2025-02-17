@@ -1,1 +1,0 @@
-A clean and modern task management application built with HTML, CSS, and JavaScript. This app allows users to add, view, and delete tasks, with all data stored in the browser's localStorage for persistence. Perfect for keeping track of daily tasks in a simple and intuitive way.
